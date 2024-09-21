@@ -1,0 +1,19 @@
+/* App.css */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #262626;
+    border-radius: 30px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(45deg, #6a11cb, #2575fc);
+    border-radius: 30px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(45deg, #6a11cb, #00d2ff);
+}
+  
