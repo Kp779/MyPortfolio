@@ -1,6 +1,6 @@
   import React from 'react'
   import { useState } from 'react';
-  import cards from '../constants/testimonials'
+  import cards from '../data/testimonials.json';
   import men from '../assets/men-testimonial.png';
   import women from '../assets/women-testimonial.png';
 

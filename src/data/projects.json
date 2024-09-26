@@ -1,0 +1,20 @@
+[
+    {
+        "id" : 1 ,
+        "projectName" : "RideShare",
+        "thumbnail" : "" ,
+        "category" : "fullstack",
+        "type" : "Vehicle Pooling System" ,
+        "shortDescription" : "vehicle pooling system that is efficient and solves real world problem.",
+        "demoLink" : ""
+    },
+    {
+        "id" : 2 ,
+        "projectName" : "Earbuds Website" ,
+        "thumbnail" : "",
+        "category" : "frontend" ,
+        "type" : "E-commerce Website" ,
+        "shortDescription" : "this ecommerce website was built to enhannce and challenge my ui design skills" , 
+        "demoLink" : ""
+    }
+]
