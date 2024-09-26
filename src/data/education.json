@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "institute": "Queens College, Indore",
+        "grade": "X",
+        "score": "93%"
+    },
+    {
+        "id": 2,
+        "institute": "Queens College, Indore",
+        "grade": "XII",
+        "score": "88.2%"
+    },
+    {
+        "id": 3,
+        "institute": "Medicaps University, Indore",
+        "grade": "B. Tech - IT",
+        "score": "8.9 cgpa"
+    }
+]

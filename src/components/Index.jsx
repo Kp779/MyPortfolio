@@ -75,7 +75,7 @@ const Index = () => {
       </div>
 
       {/* Right Section */}
-      <div id='right-section' className="w-3/4 m-2 flex-shrink-1 flex-grow-1 p-0 max-h-[34rem] bg-[#1e1e1e] overflow-y-scroll no-scrollbar flex  rounded-lg relative font-montserrat">
+      <div id='right-section' className="w-3/4 m-2 flex-shrink-1 flex-grow-1 p-0 max-h-[35rem] bg-[#1e1e1e] overflow-y-scroll no-scrollbar flex  rounded-lg relative font-montserrat">
         {/* Navbar */}
         <div id='navbar' className='rounded-bl-lg rounded-tr-lg m-0 p-0 absolute right-0 bg-[#2c2c2c]'>
           <ul className='flex flex-row gap-8 justify-end text-[#b1b1b1] font-medium p-2 text-xs px-8 py-4'>

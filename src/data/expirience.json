@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "company": "Xenpark Solutions",
+        "role": "Frontend Developer Intern",
+        "duration": "June 2023 - August 2023"
+    },
+    {
+        "id": 2,
+        "company": "Livepoint Solutions Pvt. Ltd",
+        "role": "Frontend Developer Intern",
+        "duration": "Feb 2024 - September 2023"
+    }
+]
