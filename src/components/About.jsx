@@ -45,12 +45,12 @@
             }}
           >
             {cards.map((card) => (
-              <div key={card.id} className="min-w-[30vw] p-2 mx-2 my-4 bg-[#1e1e1e]">
-                <div className='ml-4  h-16 box-border absolute top-[0rem]  flex items-end gap-3'>
+              <div key={card.id} className="min-w-[30vw] p-2 mx-2 my-4 bg-[#1e1e1e] transform transition-transform duration-300 ease-out hover:-translate-y-2">
+                <div className='ml-4  h-16 box-border absolute flex items-end gap-3' style={{top:'-1.1rem'}}>
                   <img src={card.gender==='men'?men:women} alt="" className='p-[0.4rem] w-16 h-16 border border-[#b1b1b1] border-opacity-20 rounded-lg bg-[#1e1e1ec2] ' />
                   <h2 className="text-xl font-medium mb-1 min-w-[15vw] text-white">{card.title}</h2>
                 </div>
-                <div className="bg-[#2c2c2c6e] shadow-lg rounded-lg p-6 h-36 flex items-center justify-start font-thin text-gray-400   text-xs">
+                <div className="bg-[#2c2c2c6e] shadow-lg rounded-lg p-6 h-36 flex items-center justify-start font-thin text-[#b1b1b1]   text-xs">
                   <p >{card.content}</p>
                 </div>
               </div>
@@ -81,7 +81,7 @@
                 <div
                   key={index}
                   onClick={() => slideCarousel(index)}
-                  className={`w-8 h-2 mx-1  cursor-pointer ${currentIndex === index ? 'bg-[#faea5a]' : 'bg-gray-400'}`}
+                  className={`w-8 h-2 mx-1  cursor-pointer ${currentIndex === index ? 'bg-[#faea5a]' : 'bg-[#b1b1b1]'}`}
                 />
               ))}
             </div>
