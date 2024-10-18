@@ -6,7 +6,7 @@
 
   const About = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const cardsToShow = 2;
+    const cardsToShow = 1 ;
     const totalCards = cards.length;
     const maxIndex = totalCards - cardsToShow;
 
@@ -22,8 +22,8 @@
       setCurrentIndex(index);
     };
     return (
-      <div className='overflow-y-scroll no-scrollbar font-montserrat'>
-        <p className='text-white px-6 pt-4 font-semibold text-3xl '>About Me</p>
+      <div className='overflow-y-scroll no-scrollbar font-montserrat flex flex-col justify-center '>
+        <p className='text-white px-6 pt-4 font-semibold very-sm:text-xl xtra-sm:text-3xl '>About Me</p>
         <p className='bg-gradient-to-r from-white via-[#faea5a] to-[#242321] w-16 h-[0.3rem] mx-6 my-3 rounded-lg'></p>
         <div id='details' className='m-8 flex flex-col gap-5 text-[#b1b1b1] font-thin text-sm text-justify'>
           <p>Hi, I am Kompal Poorkar, a passionate Frontend Developer based in Chennai, India. I graduated with the Class of 2024. During the past year, I've gained hands-on experience building dynamic websites and enhancing user interfaces for better engagement. I'm passionate about writing clean, maintainable code.</p>
@@ -33,24 +33,24 @@
         {/* <div>
           What I am doing
         </div> */}
-      <div className="relative w-full max-w-4xl mx-auto mt-8">
+      <div className="relative  max-w-4xl mx-5 mt-8">
         {/* Carousel Wrapper */}
         <div className="overflow-hidden relative">
           {/* Carousel Items */}
           <p className='px-3 pb-4 text-xl font-medium text-white'>Testimonials</p>
           <div
-            className="flex transition-transform duration-500 ease-in-out"
+            className="flex transition-transform duration-500 ease-in-out max-w-sm"
             style={{
               transform: `translateX(-${(100 / cardsToShow) * currentIndex}%)`,
             }}
           >
             {cards.map((card) => (
-              <div key={card.id} className="min-w-[30vw] p-2 mx-2 my-4 bg-[#1e1e1e] transform transition-transform duration-300 ease-out hover:-translate-y-2">
+              <div key={card.id} className="very-sm:min-w-[18rem]  mid:min-w-[30vw] p-2 mx-2 my-4 bg-[#1e1e1e] transform transition-transform duration-300 ease-out hover:-translate-y-2 h-full">
                 <div className='ml-4  h-16 box-border absolute flex items-end gap-3' style={{top:'-1.1rem'}}>
-                  <img src={card.gender==='men'?men:women} alt="" className='p-[0.4rem] w-16 h-16 border border-[#b1b1b1] border-opacity-20 rounded-lg bg-[#1e1e1ec2] ' />
-                  <h2 className="text-xl font-medium mb-1 min-w-[15vw] text-white">{card.title}</h2>
+                  <img src={card.gender==='men'?men:women} alt="" className='p-[0.4rem] very-sm:w-12 very-sm:h-12 xtra-sm:w-16 xtra-sm:h-16 border border-[#b1b1b1] border-opacity-20 rounded-lg bg-[#1e1e1ec2] ' />
+                  <h2 className="very-sm:text-base mid:text-base normal:text-xl font-medium mb-1 min-w-[15vw] text-white">{card.title}</h2>
                 </div>
-                <div className="bg-[#2c2c2c6e] shadow-lg rounded-lg p-6 h-36 flex items-center justify-start font-thin text-[#b1b1b1]   text-xs">
+                <div className="bg-[#2c2c2c6e] shadow-lg rounded-lg p-6 h-36 flex items-center content-start justify-start font-thin text-[#b1b1b1]   text-xs">
                   <p >{card.content}</p>
                 </div>
               </div>

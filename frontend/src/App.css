@@ -28,4 +28,13 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-  
+
+.xtra-sm-left {
+  left: -0.5rem;
+}
+
+@media (max-width: 548px) {
+  .xtra-sm-left {
+    left: -0.38rem;
+  }
+}
