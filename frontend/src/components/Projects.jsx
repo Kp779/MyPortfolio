@@ -4,7 +4,7 @@ import projectData from '../data/projects.json';
 // FilterBar component to handle filter button clicks and styling based on active filter
 const FilterBar = ({ filter, setFilter }) => {
   return (
-    <div className="flex mx-5 gap-4 my-6 flex-wrap ">
+    <div className="flex very-sm:mx-2 xtra-sm:mx-5 gap-4 my-6 flex-wrap ">
       <button
         onClick={() => setFilter('all')}
         className={`px-5 py-2 rounded-md ${filter === 'all' ? 'bg-[#faea5a] text-black' : 'bg-[#383838] text-white'} hover:bg-[#faea5a] hover:text-black`}
@@ -47,8 +47,8 @@ const Projects = () => {
 
   return (
     <div className="font-montserrat">
-      <p className="text-white px-6 pt-4 font-semibold very-sm:text-xl xtra-sm:text-3xl">Portfolio</p>
-      <p className="bg-gradient-to-r from-white via-[#faea5a] to-[#242321] w-16 h-[0.3rem] mx-6 my-3 rounded-lg"></p>
+      <p className="text-white very-sm:px-3 xtra-sm:px-6 pt-4 font-semibold very-sm:text-xl xtra-sm:text-3xl">Portfolio</p>
+      <p className="bg-gradient-to-r from-white via-[#faea5a] to-[#242321] w-16 h-[0.3rem] very-sm:mx-3 xtra-sm:mx-6 my-3 rounded-lg"></p>
       <div>
         {/* Pass filter state to FilterBar to conditionally render the active filter */}
         <FilterBar filter={filter} setFilter={setFilter} />
@@ -57,7 +57,7 @@ const Projects = () => {
             <Card key={item.id} title={item.projectName} />
           ))}
         </div> */}
-        <p className='mx-6 text-lg text-[#b1b1b1]'>Projects will be uploaded shortly . . .</p>
+        <p className='very-sm:mx-3 xtra-sm:mx-6 text-lg text-[#b1b1b1]'>Projects will be uploaded shortly . . .</p>
       </div>
     </div>
   );

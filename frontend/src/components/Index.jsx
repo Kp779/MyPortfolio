@@ -16,9 +16,9 @@ import { FaLinkedin } from "react-icons/fa6";
 const Index = () => {
 
   return (
-    <div id='main-page' className=' bg-[#111111] mid:h-screen max-h-full w-full max-w-full flex mid:justify-center mid:items-center p-8 box-border mid:flex-row flex-col very-sm:h-fit very-sm:items-center '>
+    <div id='main-page' className=' bg-[#111111] mid:h-screen max-h-full w-full max-w-full flex mid:justify-center mid:items-center very-sm:p-4 xtra-sm:p-8 box-border mid:flex-row flex-col very-sm:h-fit very-sm:items-center '>
       {/* Left Section */}
-      <div className="left-section mid:h-full h-fit mid:min-h-[80vh] max-h-[35rem] flex-shrink-0 flex-grow-0 w-full mid:w-1/4 m-2 p-4 bg-[#1e1e1e] flex mid:flex-col  justify-center mid:items-center rounded-lg very-sm:items-start  ">
+      <div className="left-section mid:h-full h-fit mid:min-h-[80vh] max-h-[35rem] flex-shrink-0 flex-grow-0 w-full mid:w-1/4 m-2 p-4 bg-[#1e1e1e] flex mid:flex-col very-sm:justify-start xtra-sm:justify-center mid:items-center rounded-lg very-sm:items-start  ">
         {/* Intro Section */}
         <div id='intro-section' className='flex flex-col items-center'>
           <div className='p-2 md:p-4 m-2 bg-[#383838] rounded-md  xtra-sm:min-w-[7rem]'>
@@ -33,7 +33,7 @@ const Index = () => {
         </div>
         <div className='w-44 h-[1px] my-6 bg-slate-300 very-sm:hidden '></div>
         {/* Detail Section */}
-        <div id='detail-section' className='flex mid:flex-col ml-4  text-[#b1b1b1] font-montserrat very-sm:flex-wrap'>
+        <div id='detail-section' className='flex very-sm:flex-col xtra-sm:flex-row mid:flex-col ml-4  text-[#b1b1b1] font-montserrat very-sm:flex-wrap'>
           <div id='optionalSection' className='very-sm:block mid:hidden'>
             <p className='text-[#b1b1b1] font-montserrat font-medium text-[2rem]  xtra-sm:text-center'>Kompal Poorkar</p>
           </div>
@@ -85,7 +85,7 @@ const Index = () => {
       </div>
 
       {/* Right Section */}
-      <div id='right-section' className="max-w-full mid:w-3/4 m-2 mid:h-full min-h-[80vh] flex-shrink-1 flex-grow-1 p-0 mid:max-h-[35rem] very-sm:h-fit bg-[#1e1e1e] overflow-y-scroll no-scrollbar flex flex-wrap rounded-lg relative font-montserrat very-sm:content-start   " >
+      <div id='right-section' className="w-full mid:w-3/4 m-2 mid:h-full min-h-[80vh] flex-shrink-0 flex-grow-0 p-0 mid:max-h-[35rem] very-sm:h-fit bg-[#1e1e1e] overflow-y-scroll no-scrollbar flex flex-wrap rounded-lg relative font-montserrat very-sm:content-start   " >
         {/* Navbar */}
         <div id='navbar' className='rounded-bl-lg rounded-tr-lg m-0 p-0 small:absolute right-0 bg-[#2c2c2c] very-sm:w-full small:w-fit very-sm:h-fit'>
           <ul className='flex flex-row very-sm:gap-4 xtra-sm:gap-8 very-sm:justify-center xtra-sm:justify-center small:justify-end text-[#b1b1b1] font-medium p-2 text-xs px-8 py-4 '>

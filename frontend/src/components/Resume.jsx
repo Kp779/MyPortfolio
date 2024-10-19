@@ -28,7 +28,7 @@ const Resume = () => {
 
   return (
     <div className='font-montserrat w-full flex justify-center flex-col'>
-      <div className='text-white px-6 pt-4 font-semibold very-sm:text-xl xtra-sm:text-3xl  flex gap-4'>
+      <div className='text-white very-sm:px-3 xtra-sm:px-6 pt-4 font-semibold very-sm:text-xl xtra-sm:text-3xl  flex gap-4'>
         Resume
         <div className="relative group inline-block">
           <LuDownload
@@ -40,18 +40,18 @@ const Resume = () => {
           </div>
         </div>
       </div>
-      <p className='bg-gradient-to-r from-white via-[#faea5a] to-[#242321] w-16 h-[0.3rem] mx-6 my-3 rounded-lg' />
+      <p className='bg-gradient-to-r from-white via-[#faea5a] to-[#242321] w-16 h-[0.3rem] very-sm:mx-3 xtra-sm:mx-6 my-3 rounded-lg' />
       <div className='flex very-sm:flex-col-reverse small:flex-row'>
         <div id='Major-Block' className='very-sm:w-full small:w-4/6'>
           <div id='content-section'>
-            <div id='title' className='flex text-white items-center gap-5 my-6 mx-6'>
+            <div id='title' className='flex text-white items-center gap-5 my-6 very-sm:mx-3 xtra-sm:mx-6'>
               <IoBookOutline className='w-9 h-9 p-2 rounded-lg bg-[#383838]' />
               <p className='text-lg'>Work Expirience</p>
             </div>
             <div className='flex flex-col-reverse'>
               {expirience.map((ex) => {
                 return(
-                <div className='flex items-start mx-10 border-l-2 '>
+                <div className='flex items-start very-sm:mx-7 xtra-sm:mx-10 border-l-2 '>
                   <div className='very-sm:w-3 very-sm:h-3 xtra-sm:w-4 xtra-sm:h-4 rounded-full bg-emerald-50 relative xtra-sm-left'>
                   </div>
                   <div key={ex.id} className="mb-4 ml-6 very-sm:px-0 xtra-sm:px-6">
@@ -65,13 +65,13 @@ const Resume = () => {
 
           </div>
           <div id='content-section'>
-            <div id='title' className='flex text-white items-center gap-5 my-6 mx-6'>
+            <div id='title' className='flex text-white items-center gap-5 my-6 very-sm:mx-3 xtra-sm:mx-6'>
               <IoBookOutline className='w-9 h-9 p-2 rounded-lg bg-[#383838]' />
               <p className='text-lg'>Education</p>
             </div>
             <div className='flex flex-col-reverse'>
               {education.map((ex) => (
-                <div className='flex items-start mx-10 border-l-2 '>
+                <div className='flex items-start very-sm:mx-7 xtra-sm:mx-10 border-l-2 '>
                   <div className='very-sm:w-3 very-sm:h-3 xtra-sm:w-4 xtra-sm:h-4 rounded-full bg-emerald-50 relative xtra-sm-left' >
                   </div>
                   <div key={ex.id} className="mb-4 ml-6 very-sm:px-0 xtra-sm:px-6">
@@ -85,13 +85,13 @@ const Resume = () => {
 
           </div>
           <div id='content-section'>
-            <div id='title' className='flex text-white items-center gap-5 my-6 mx-6'>
+            <div id='title' className='flex text-white items-center gap-5 my-6 very-sm:mx-3 xtra-sm:mx-6'>
               <IoBookOutline className='w-9 h-9 p-2 rounded-lg bg-[#383838]' />
               <p className='text-lg'>Extras</p>
             </div>
             <div className='flex flex-col-reverse'>
               {extras.map((ex) => (
-                <div className='flex items-start mx-10 border-l-2 mb-4 '>
+                <div className='flex items-start very-sm:mx-7 xtra-sm:mx-10 border-l-2 mb-4 '>
                   <div className='very-sm:w-3 very-sm:h-3 xtra-sm:w-4 xtra-sm:h-4 rounded-full bg-emerald-50 relative xtra-sm-left'>
                   </div>
                   <div key={ex.id} className="mb-4 ml-6 very-sm:px-0 xtra-sm:px-6">
@@ -108,7 +108,7 @@ const Resume = () => {
         <div id='skill-block' 
           className='
             very-sm:w-full small:w-2/6 
-            very-sm:mx-6 small:mx-0
+            very-sm:mx-2 xtra-sm:mx-6 small:mx-0
           '>
           <p className='py-2 my-4 text-lg text-[#faea5a] mx-2'>Technologies</p>
           <div className='flex flex-wrap mr-4 text-[#b1b1b1]'>

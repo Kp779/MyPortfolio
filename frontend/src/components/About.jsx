@@ -23,9 +23,9 @@
     };
     return (
       <div className='overflow-y-scroll no-scrollbar font-montserrat flex flex-col justify-center '>
-        <p className='text-white px-6 pt-4 font-semibold very-sm:text-xl xtra-sm:text-3xl '>About Me</p>
-        <p className='bg-gradient-to-r from-white via-[#faea5a] to-[#242321] w-16 h-[0.3rem] mx-6 my-3 rounded-lg'></p>
-        <div id='details' className='m-8 flex flex-col gap-5 text-[#b1b1b1] font-thin text-sm text-justify'>
+        <p className='text-white very-sm:px-3 xtra-sm:px-6 pt-4 font-semibold very-sm:text-xl xtra-sm:text-3xl '>About Me</p>
+        <p className='bg-gradient-to-r from-white via-[#faea5a] to-[#242321] w-16 h-[0.3rem] very-sm:mx-3 xtra-sm:mx-6 my-3 rounded-lg'></p>
+        <div id='details' className='very-sm:m-4 xtra-sm:m-8 flex flex-col gap-5 text-[#b1b1b1] font-thin text-sm text-justify'>
           <p>Hi, I am Kompal Poorkar, a passionate Frontend Developer based in Chennai, India. I graduated with the Class of 2024. During the past year, I've gained hands-on experience building dynamic websites and enhancing user interfaces for better engagement. I'm passionate about writing clean, maintainable code.</p>
           <p>When I'm not coding, you can find me exploring the latest trends in web development, working on personal projects, or exploring about open source projects and contributions</p>
           <p>I'm currently seeking new opportunities to apply my skills and contribute to exciting projects while continuing to grow as a developer.</p>
@@ -33,7 +33,7 @@
         {/* <div>
           What I am doing
         </div> */}
-      <div className="relative  max-w-4xl mx-5 mt-8">
+      <div className="relative  max-w-4xl very-sm:mx-2 xtra-sm:mx-5 mt-8">
         {/* Carousel Wrapper */}
         <div className="overflow-hidden relative">
           {/* Carousel Items */}
