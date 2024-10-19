@@ -1,14 +1,11 @@
 {
   "builds": [
     {
-      "src": "backend/*.js",
+      "src": "backend/index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "backend/$1"
-    }
+    { "src": "/send-email", "dest": "backend/index.js" }
   ]
 }
