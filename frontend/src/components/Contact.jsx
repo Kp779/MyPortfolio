@@ -34,11 +34,11 @@ const Contact = () => {
 
   return (
     <div className="font-montserrat w-full text-white flex mid:justify-center very-sm:items-start flex-col">
-      <p className="text-white px-6 pt-4 font-semibold very-sm:text-xl xtra-sm:text-3xl">Contact</p>
-      <p className="bg-gradient-to-r from-white via-[#faea5a] to-[#242321] w-16 h-[0.3rem] mx-6 my-3 rounded-lg"></p>
+      <p className="text-white very-sm:px-3 xtra-sm:px-6 pt-4 font-semibold very-sm:text-xl xtra-sm:text-3xl">Contact</p>
+      <p className="bg-gradient-to-r from-white via-[#faea5a] to-[#242321] w-16 h-[0.3rem] very-sm:mx-3 xtra-sm:mx-6 my-3 rounded-lg"></p>
 
-      <div id="details" className="px-6">
-        <p className="text-lg mx-2 mt-6">Feel free to reach out to me via the form below:</p>
+      <div id="details" className="very-sm:px-3 xtra-sm:px-6">
+        <p className="text-lg mx-2 mt-5">Feel free to reach out to me via the form below:</p>
 
         <form className="py-6 px-2 rounded-md max-w-lg" onSubmit={handleSubmit}>
           <div className="mb-4">
