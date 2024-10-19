@@ -6,7 +6,6 @@ require('dotenv').config(); // Add this line to use .env variables
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors({ origin: '*' }));
 app.use(cors({ origin: 'https://kompal-poorkar.vercel.app' }));
 // Configure the transporter for sending emails
 const transporter = nodemailer.createTransport({
@@ -45,10 +44,11 @@ const mailOptions = {
   });
 });
 
-
 const PORT = process.env.PORT || 5000;
+const BASE_URL = process.env.BASE_URL || `http://localhost:${PORT}`;
+
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${BASE_URL}`);
 });
 
 module.exports = app;
