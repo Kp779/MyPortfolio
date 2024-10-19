@@ -7,7 +7,7 @@ require('dotenv').config(); // Add this line to use .env variables
 const app = express();
 app.use(bodyParser.json());
 app.use(cors({ origin: '*' }));
-
+app.use(cors({ origin: 'https://kompal-poorkar.vercel.app' }));
 // Configure the transporter for sending emails
 const transporter = nodemailer.createTransport({
   service: 'gmail',

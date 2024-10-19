@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios'; // Import axios for API requests
+const backendURL = import.meta.env.VITE_REACT_APP_BACKEND_URL
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,7 +19,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/send-email', formData);
+      const response = await axios.post(`${backendURL}/send-email`, formData);
       if (response.status === 200) {
         setStatus('Email sent successfully!');
         setFormData({ name: '', email: '', message: '' }); // Clear form
